@@ -15,8 +15,7 @@ Detect if someone has parkinson's using machine learning !
 """)
 # Display an image
 image = Image.open('headerB.jpg')
-st.image(image, caption="ML", use_column_width=True)
-
+st.image(image, caption="ML", width="stretch")
 # Read the dataset
 df = pd.read_csv("parkinsons.csv")
 
