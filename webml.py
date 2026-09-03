@@ -29,7 +29,7 @@ st.dataframe(df)
 # show statistics on the data
 st.write(df.describe())
 # show the data as a line chart
-chart = st.line_chart(df.drop(columns=['name'], axis=1))
+chart = st.line_chart(df.drop(columns=['name']))
 
 # Check for missing values in the dataset
 df.isnull().sum()
