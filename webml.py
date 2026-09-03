@@ -36,7 +36,7 @@ df.isnull().sum()
 # Display the count of each target class
 df['status'].value_counts()
 # Display the mean values grouped by target class
-df.groupby('status').mean()
+df.groupby('status').mean(numeric_only=True)
 # Split the dataset into features (X) and target (Y)
 X = df.drop(columns=['name', 'status'], axis=1)
 Y = df['status']
