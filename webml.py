@@ -38,7 +38,7 @@ df['status'].value_counts()
 # Display the mean values grouped by target class
 df.groupby('status').mean(numeric_only=True)
 # Split the dataset into features (X) and target (Y)
-X = df.drop(columns=['name', 'status'], axis=1)
+X = df.drop(columns=['name', 'status'])
 Y = df['status']
 
 # Spilt the data set in 80% Training and 20% Testing
